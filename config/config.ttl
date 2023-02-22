@@ -30,6 +30,9 @@
 <#service> rdf:type fuseki:Service;
   fuseki:name "ds";
 
+  fuseki:serviceQuery      "sparql" ;    # SPARQL query service
+  fuseki:serviceUpdate     "update" ;    # SPARQL update service
+
   fuseki:endpoint [ fuseki:operation fuseki:query ; ];
   fuseki:endpoint [ fuseki:operation fuseki:query ; fuseki:name "sparql" ];
   fuseki:endpoint [ fuseki:operation fuseki:query ; fuseki:name "query" ];
